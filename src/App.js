@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
+import Snow from 'react-snow-effect';
 import './App.css';
 
 class App extends React.Component {
@@ -13,10 +14,10 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <h1>{this.Daynum()} Days</h1>
-        </header>
+      <div className="app">
+          <Snow/>
+          <h1 className="daynum">{this.Daynum()} Days</h1>
+          <p>Welcome</p>
       </div>
     );
   }
