@@ -17,7 +17,6 @@ class App extends React.Component {
       <div className="app">
           <Snow/>
           <h1 className="daynum">{this.Daynum()} Days</h1>
-          <p>Welcome</p>
       </div>
     );
   }
