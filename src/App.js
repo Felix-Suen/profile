@@ -1,5 +1,5 @@
 import React from 'react';
-import Snow from 'react-snow-effect';
+import Snowfall from 'react-snowfall';
 import './App.css';
 
 class App extends React.Component {
@@ -14,7 +14,8 @@ class App extends React.Component {
   render() {
     return (
       <div className="app">
-          <Snow/>
+          <Snowfall color="yellow" snowflakeCount={50}/>
+          <Snowfall color="red" snowflakeCount={20}/>
           <h1 className="daynum">{this.Daynum()} Days</h1>
       </div>
     );
