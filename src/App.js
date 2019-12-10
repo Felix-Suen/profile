@@ -1,6 +1,9 @@
 import React from 'react';
-import Snowfall from 'react-snowfall';
 import './App.css';
+import Winter from './seasons/winter.js';
+import Autumn from './seasons/autumn.js';
+import Summer from './seasons/summer.js';
+import Spring from './seasons/spring.js';
 
 class App extends React.Component {
   Daynum() {
@@ -12,13 +15,7 @@ class App extends React.Component {
   }
 
   render() {
-    return (
-      <div className="app">
-          <Snowfall color="yellow" snowflakeCount={50}/>
-          <Snowfall color="red" snowflakeCount={20}/>
-          <h1 className="daynum">{this.Daynum()} Days</h1>
-      </div>
-    );
+    return <Spring day={this.Daynum()}/>
   }
 }
 

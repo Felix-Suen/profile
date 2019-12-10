@@ -1,0 +1,78 @@
+div.winter-background {
+    background-image:linear-gradient( #8e9cbd, rgb(228, 207, 207)); 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+}
+
+h1.winter-day {
+    font-size: 100px;
+    color: rgb(207, 58, 58);
+    margin: none;
+    text-align: center;
+    top: 50%;
+    text-shadow: 0px -4px 2px #fff;
+}
+
+div.autumn-background {
+  background-image:linear-gradient( rgb(238, 231, 170), #f5a861); 
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+h1.autumn-day {
+  font-size: 100px;
+  color: rgb(33, 75, 189);
+  margin: none;
+  text-align: center;
+  top: 50%;
+  text-shadow: 0px -4px 2px rgb(238, 155, 46);
+}
+
+div.summer-background {
+  background-color: #fcc18a;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+h1.summer-day {
+  font-size: 100px;
+  color: #0066cc;
+  top: 50%;
+  text-shadow: 0px -4px 2px rgb(238, 91, 46);
+}
+
+div.wave{
+  width: 100%;
+  align-self: flex-end;
+}
+
+div.spring-background {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+h1.spring-day {
+  font: bold 100px arial, sans-serif;
+  background-color: #2b2929;
+  color: transparent;
+  text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
+  -webkit-background-clip: text;
+     -moz-background-clip: text;
+          background-clip: text;
+}
