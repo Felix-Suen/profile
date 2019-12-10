@@ -1,0 +1,9 @@
+{
+    "manifest_version": 2,
+    "name": "putato",
+    "version": "1.0",
+    "author": "Felix",
+    "chrome_url_overrides" : {
+        "newtab": "index.html"
+    }
+}
