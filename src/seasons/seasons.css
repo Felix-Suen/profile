@@ -68,11 +68,9 @@ div.spring-background {
 }
 
 h1.spring-day {
-  font: bold 100px arial, sans-serif;
-  background-color: #2b2929;
-  color: transparent;
-  text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
-  -webkit-background-clip: text;
-     -moz-background-clip: text;
-          background-clip: text;
+  font-size: 100px;
+  font-family: 'Futura';
+  color: #fff;
+  text-shadow: 0 0 3px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
+  text-align: center;
 }

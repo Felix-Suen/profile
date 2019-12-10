@@ -14,7 +14,7 @@ class Spring extends React.Component {
                     how={70}
                     time={40}
                     size={'100px'}
-                    background={'#a3ff4a'}
+                    background={'#035973'}
                 />
                 <h1 className="spring-day">{this.props.day} Days</h1>
             </div>
