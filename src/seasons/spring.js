@@ -1,6 +1,5 @@
 import React from 'react';
 import Sky from 'react-sky';
-import putato from '../1F954-potato-512.png';
 
 class Spring extends React.Component {
     render() {
