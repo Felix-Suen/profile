@@ -11,7 +11,6 @@ class App extends React.Component {
     super(props);
     this.state = {
       daynum: this.Daynum(),
-      currentTime: this.current()
     }
   }
 
@@ -31,17 +30,15 @@ class App extends React.Component {
   componentDidMount() {
     setInterval( () => {
       this.setState({
-        daynum : this.Daynum(),
-        currentTime: this.current()
+        daynum : this.Daynum()
       })
-    },60000)
+    },360000)
   }
 
   render() {
     return(
       <div>
-        <Spring day={this.state.daynum} time={this.state.currentTime} />
-        
+        <Spring day={this.state.daynum}/>
       </div>
     );
   }

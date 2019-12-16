@@ -17,7 +17,6 @@ class Spring extends React.Component {
                     size={'100px'}
                     background={'#035973'}
                 />
-                <Clock value={this.props.time}/>
                 <h1 className="spring-day">{this.props.day} Days</h1>
             </div>
         );
