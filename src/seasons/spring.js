@@ -1,7 +1,9 @@
 import React from 'react';
 import Sky from 'react-sky';
+import Clock from 'react-clock';
 
 class Spring extends React.Component {
+
     render() {
         return(
             <div  className="spring-background">
@@ -11,10 +13,11 @@ class Spring extends React.Component {
                         1: "https://cdn2.iconfinder.com/data/icons/colored-fast-food-1/512/fast_food-26-512.png",
                         2: "https://cdn.iconscout.com/icon/premium/png-256-thumb/papaya-50-911411.png"}}
                     how={70}
-                    time={40}
+                    time={20}
                     size={'100px'}
                     background={'#035973'}
                 />
+                <Clock value={this.props.time}/>
                 <h1 className="spring-day">{this.props.day} Days</h1>
             </div>
         );

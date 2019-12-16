@@ -5,11 +5,13 @@ import Autumn from './seasons/autumn.js';
 import Summer from './seasons/summer.js';
 import Spring from './seasons/spring.js';
 
+
 class App extends React.Component {
   constructor (props) {
     super(props);
     this.state = {
-      daynum: this.Daynum()
+      daynum: this.Daynum(),
+      currentTime: this.current()
     }
   }
 
@@ -21,16 +23,27 @@ class App extends React.Component {
     return day_difference;
   }
 
+  current() {
+    var currentDate = new Date();
+    return currentDate;
+  }
+
   componentDidMount() {
     setInterval( () => {
       this.setState({
-        daynum : this.Daynum()
+        daynum : this.Daynum(),
+        currentTime: this.current()
       })
-    },180000)
+    },60000)
   }
 
   render() {
-    return <Winter day={this.state.daynum}/>
+    return(
+      <div>
+        <Spring day={this.state.daynum} time={this.state.currentTime} />
+        
+      </div>
+    );
   }
 }
 
